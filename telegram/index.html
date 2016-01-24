@@ -1,0 +1,264 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+*{margin:0;padding:0}
+body{
+  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 30px;
+
+	font-family:"Nunito","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;font-size:14px;background:#fff;color:#333}
+.markdown-body{line-height:1.5em;font-size:1.3em}
+h1{font-size:1.8em}
+h2{font-size:1.5em}
+h3{font-size:1.3em}
+a{text-decoration:none;outline-width:0;color:#258fb8}
+a:hover{color:#2571B8}
+
+.markdown-body img.left,.markdown-body video.left{float:left;margin-right:1.5em}
+
+
+.markdown-body img.right, .markdown-body video.right{float:right;margin-left:1.5em}
+
+.markdown-body img.center,.markdown-body video.center{display:block;margin:0 auto 1.5em}
+
+.markdown-body img.left, .markdown-body video.left, .markdown-body img.right, .markdown-body video.right{margin-bottom:.8em}
+
+.alignleft{float:left}
+.alignright{float:right}
+.clearfix{*zoom:1}
+.clearfix:after{content:"";display:table;clear:both}
+
+
+.markdown-body h1{font-weight:300;line-height:35px;margin-bottom:20px}
+.markdown-body h1 a{color:#666}
+.markdown-body a:hover{text-decoration:underline}
+.markdown-body .more-link{display:block;margin-top:16px;padding-left:30px;position:relative}
+.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body iframe,.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6,.markdown-body .video-container{margin-top:20px}
+.markdown-body ul,.markdown-body ol,.markdown-body dl{margin-left:20px}
+.markdown-body ul ul,.markdown-body ul ol,.markdown-body ul dl,.markdown-body ol ul,.markdown-body ol ol,.markdown-body ol dl,.markdown-body dl ul,.markdown-body dl ol,.markdown-body dl dl{margin-top:0}
+.markdown-body strong{font-weight:bold}
+.markdown-body em{font-style:italic}
+.markdown-body p{margin-top:10px}
+.markdown-body h2{font-weight:300;border-bottom:1px solid #ddd;position:relative}
+.markdown-body h2:before{content:"";position:absolute;bottom:-2px;border-bottom:1px solid #fff;width:100%}
+.markdown-body img,.markdown-body video{max-width:100%;height:auto}
+.markdown-body blockquote{background:#ddd;border-left:5px solid #ccc;padding:15px 20px;margin-top:10px}
+.markdown-body blockquote>p:first-of-type{margin-top:0}
+.markdown-body iframe{border:none}
+.markdown-body table{background:#ddd;border:1px solid #ccc;border-spacing:0;margin-top:10px}
+.markdown-body table th{background:#ccc;padding:0 15px}
+.markdown-body table td{text-align:center}
+.markdown-body table tr:nth-of-type(2n){background:#d5d5d5}
+.markdown-body .caption{display:block;font-size:0.9em;color:#999;padding-left:25px;position:relative}
+.markdown-body .caption:before{content:"\f040";color:#ccc;font:1.3em FontAwesome;line-height:1.6em;position:absolute;left:0}
+.markdown-body .video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}
+.markdown-body .video-container iframe,.markdown-body .video-container object,.markdown-body .video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}
+
+.markdown-body footer{padding:15px 0;border-top:1px solid #fff;text-align:center;font-size:0.9em}
+code,pre{background:#ddd;border:1px solid #ccc;font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace; font-size: 0.9em;}
+code{font-size:0.9em;padding:1px 3px;margin:0 3px}
+pre code{background:none;border:none;padding:0;margin:0}
+
+
+.markdown-body p{margin-top:10px}
+.markdown-body h2{font-size:1.3em;color:#333;margin-top:30px;font-weight:bold}
+.markdown-body h2::before{border-bottom:none}
+.markdown-body blockquote{border-left:5px solid #2571B8;background:#F7F7F7}
+.markdown-body blockquote p{margin-top:0px}
+.markdown-body table{line-height:1.2em}
+.markdown-body table td{text-align:left}
+
+
+.markdown-body pre{ background: none; border: none; padding: 0; margin: 4px 0px;}
+.markdown-body{text-align: left;}
+.markdown-body table th,.markdown-body table td{ padding: 4px;border-collapse: collapse; border:solid 1px #ddd;}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6{ line-height: 1.2em;}
+	
+.markdown-body{border: none;}
+.markdown-body	hr{ margin: 20px 0px;border: 0; border-top:solid 1px #ddd;}
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #002b36;
+  color: #839496;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string {
+  color: #586e75;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function,
+.hljs-name {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type,
+.hljs-link_reference {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f;
+}
+
+/* Solarized Violet */
+.hljs-link_label {
+  color: #6c71c4;
+}
+
+.tex .hljs-formula {
+  background: #073642;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">Telegram 新手完整使用教程</h1>
+
+<p>首先介绍一下 Telegram，可能很多人都没听说过，这款软件简洁易用，没有广告，没有朋友圈红包钱包理财的功能，只有聊天，只有聊天，只有聊天。<br>客户端基本上全平台适配，包括某 1% 平台。（Symbian 用户就不要来凑热闹了）</p>
+
+<h2 id="toc_1">1.使用前必要的准备</h2>
+
+<p>由于我们不知道的原因，Telegram 无法在中国一些地区正常注册、登录，所以我们需要下载一个代理软件。<br/>
+(如果你已经有代理软件或者你可以自由访问互联网可以不用下载下列软件)<br/>
+推荐：Lantern <a href="https://gfw.cat/lantern.exe">Windows</a> <a href="https://gfw.cat/lantern.dmg">OS X</a> <a href="https://gfw.cat/lantern-android-beta.apk">Android</a><br/>
+Psiphon 赛风 <a href="https://gfw.cat/psiphon3.exe">Windows</a><br/>
+<a href="https://gfw.cat/PsiphonAndroid.apk">Android</a><br/>
+iOS 用户可以尝试 App Store 中各种免费 VPN。</p>
+
+<p>建议全部下载，以免其中一个软件因不可抗力无法继续使用。</p>
+
+<p>如果你使用 Psiphon，建议在设置中开启「拆分隧道」（国内外自动分流），<strong>点击「更改」保存设置</strong>。</p>
+
+<h2 id="toc_2">下载与注册 Telegram</h2>
+
+<p><a href="https://gfw.cat/tsetup.0.9.18.exe">Windows</a><br/>
+OS X 请在 Mac App Store 搜索「Telegram Desktop」<br/>
+iOS 在 App Store 中搜索「Telegram」<br/>
+Android 用户可以在「酷市场」<a href="http://coolapk.com">酷安</a>中下载。</p>
+
+<p>一步步 Next 即可。<br/>
+注册时如果收不到验证码，请将代理软件临时切换至「全局模式」重试</p>
+
+<h2 id="toc_3">汉化 Telegram</h2>
+
+<p>打开 <a href="https://telegram.me/transfortelegram">Telegram zh-cn Project</a> 的公众号（或者称频道 Chanel），加入（JOIN）频道，按照提示下载配置文件，并按照提示安装即可。（Desktop 用户请加载文件后不要删除文件）</p>
+
+<h2 id="toc_4">开始聊天</h2>
+
+<p>你可以在设置页面设置一个用户名，别人用用户名就可以与你对话，你也可以将你的聊天网址发给他人： <a href="http://telegram.me/%E7%94%A8%E6%88%B7%E5%90%8D">http://telegram.me/用户名</a> </p>
+
+<p><strong>由于 Telegram 有大量国外（尤其是中东地区）用户，你可能会收到陌生人各种语言的骚扰，你可以点开头像，「屏蔽」(block)该用户，但请不要滥用屏蔽功能，屏蔽一个用户可能会导致他的帐号发消息受限。</strong></p>
+
+<h2 id="toc_5">创建群组</h2>
+
+<p><img src="https://ooo.0o0.ooo/2016/01/24/56a4ff966cc97.png" alt=""/><br/>
+<strong>点击右边的按钮即可创建群组和频道</strong><br/>
+频道是类似微信订阅号的东西，但是你只能查看频道的内容，而不能向频道发送消息，</p>
+
+<p>建立新的群组后，你可以通过群资料页面的邀请链接邀请其他 Telegram 用户进群，如果该链接被滥用，你也可以更换一个链接，原链接将失效。</p>
+
+<p>一般的群只能容纳 200 人，但是群主可以在群简介中输入「tosupergroup」来升级为超级群，超级群的消息可由作者和管理员撤回（普通群管理员可以删除消息），超级群可以看到之前的聊天记录，请谨慎升级。<strong>升级会创建新的加群链接，原链接失效</strong></p>
+
+<h2 id="toc_6">加好友</h2>
+
+<p>在 Telegram 中，你知道对方的用户名就可以开始对话，但你如果想把他添加到你的通讯录中，就必须得到他的手机号，使用「联系人」中的「添加联系人」即可。<strong>将他人添加进你的通讯录，他会看到你的手机号，请注意隐私保护</strong></p>
+
+<h2 id="toc_7">私密对话</h2>
+
+<p>点击他人头像点击「开始私密对话」且对方在线即可进入端到端加密的安全对话， 可以设置阅后即焚，Telegram 不保存任何聊天记录，传输全程加密。</p>
+
+<p>OS X 的 Telegram Desktop 并不能使用此功能，你可以使用 Mac App Store 里的「Telegram」客户端（没有Desktop）。</p>
+
+<h2 id="toc_8">文件传输</h2>
+
+<p>Telegram 支持最高 1.5 G 的任意格式文件传输，请不要滥用，接受他人文件前也请格外小心。</p>
+
+<p>希望大家可以在 TG 上提高姿势水平。<br/>
+最后祝你，身体健康。再见。</p>
+
+</div></body>
+
+</html>

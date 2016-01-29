@@ -3872,9 +3872,9 @@ var rules = [
   "up2stream.com",
   "phncdn.com",
   "pubu.com.tw",
-  "505cents.com",
-  "uvwxyz.xyz",
-  "blueimgs.com",
+  "systemcdn.net",
+  "cam4.com",
+  "cam4s.com",
   "tumblr.com",
   "ted.com",
   "dribbble.com",
@@ -3888,7 +3888,11 @@ var rules = [
   "subhd.com",
   "ionic.io",
   "nocookie.net",
-  "imgur.com"
+  "imgur.com",
+  "github.com",
+  "ssl.fastly.net",
+  "akamaistream.net",
+  "theinitium.com"
 ];
 
 /*
